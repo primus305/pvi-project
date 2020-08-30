@@ -70,7 +70,7 @@ if __name__ == "__main__":
 
     model.summary()
 
-    # treniranje modela kroz 30 epoha, tj. ciklusa kroz celi trening dataset. Kao argument
+    # treniranje modela kroz 50 epoha, tj. ciklusa kroz celi trening dataset. Kao argument
     # prosledićemo i batch_size koji označava broj uzoraka obrađenih pre ažuriranja modela
     history = model.fit(inputs_train, targets_train, validation_data=(inputs_validation, targets_validation),
                         batch_size=32, epochs=50)
